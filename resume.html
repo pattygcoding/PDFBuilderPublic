@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ json_data.tab }}</title>
+    <style>
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: Cambria, serif;
+            font-size: 12pt;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        body,
+        h1,
+        .contact-info p,
+        .education-header,
+        .job-duration,
+        .job-header,
+        .job-title,
+        .project-header,
+        .skills p,
+        .acitivites-awards p,
+        .education p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .education-header,
+        .job-duration,
+        .job-header,
+        .job-title, 
+        .project-header {
+            font-size: 14pt;
+        }
+
+        .activity,
+        .education-header,
+        .job-header,
+        .job-duration,
+        .job-title,
+        .project-header,
+        .skills-title,
+        .section-title {
+            font-weight: bold;
+        }
+
+        .contact-info p {
+            text-align: center;
+        }
+
+        .job-description,
+        .project-description {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        .job-duration {
+            margin-left: auto;
+            text-align: right;
+        }
+
+        .education-header,
+        .job-header,
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .job-title {
+            text-align: left;
+        }
+
+        .skills-title, .section-title {
+            border-bottom: 2px solid #000;
+        }
+
+        .section-title {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <h1>{{ json_data.title }}</h1>
+    <div class="contact-info">
+        <p>
+            Phone: {{ json_data.contact_info.phone }} |
+            Email: <a href="mailto:{{ json_data.contact_info.email }}">{{ json_data.contact_info.email }}</a> |
+            Portfolio Website: <a href="{{ json_data.contact_info.website }}" target="_blank">{{
+                json_data.contact_info.website }}</a>
+        </p>
+        <p>
+            LinkedIn: <a href="{{ json_data.contact_info.linkedin }}" target="_blank">{{ json_data.contact_info.linkedin
+                }}</a>
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills">
+        <h2 class="skills-title">SKILLS (Click any <span style="color: blue;">blue skill</span> for my sample code demo)
+        </h2>
+        <p><strong>Languages:</strong>
+            {% for skill in json_data.skills.languages %}
+            <a href="{{ skill.link }}" target="_blank">{{ skill.name }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+        <p><strong>Frameworks/Extensions:</strong>
+            {% for framework in json_data.skills.frameworks_extensions %}
+            <a href="{{ framework.link }}" target="_blank">{{ framework.name }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+        <p><strong>Other Technologies:</strong>
+            {% for tech in json_data.skills.other_technologies %}
+            {{ tech }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+
+    <!-- Job Experience Section -->
+    <div class="experience">
+        <h2 class="section-title">Work & Professional Experience</h2>
+        {% for job in json_data.experience %}
+        <div class="job-entry">
+            <div class="job-header">
+                <span class="job-title" style="float: left;">{{ job.job_title }}</span>
+                <span class="job-duration" style="float: right;">{{ job.duration }}</span>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="job-header">
+                <span class="job-title" style="float: left;">{{ job.company }}</span>
+                <span class="job-duration" style="float: right;">{{ job.location }}</span>
+                <div style="clear: both;"></div>
+            </div>
+            <ul class="job-description">
+                {% for point in job.description %}
+                <li>{{ point }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Projects Section -->
+    <div class="technical-projects">
+        <h2 class="section-title">Technical Projects</h2>
+        {% for project in json_data.technical_projects %}
+        <div class="project-entry">
+            <div class="project-header">
+                <span class="job-title" style="float: left;">{{ project.project_name }}</span>
+                <span class="job-duration" style="float: right;">{{ project.duration }}</span>
+                <div style="clear: both;"></div>
+            </div>
+            <ul class="project-description">
+                {% for point in project.description %}
+                <li>{{ point }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Activities Section -->
+    <div class="activities-awards">
+        <h2 class="section-title">Activities & Awards</h2>
+        <div class="education-entry">
+            <div class="education-header">
+                <span style="float: left; width: 33%; text-align: left;">{{ json_data.activities_awards[0] }}</span>
+                <span style="float: left; width: 33%; text-align: center;">{{ json_data.activities_awards[1] }}</span>
+                <span style="float: left; width: 33%; text-align: right;">{{ json_data.activities_awards[2] }}</span>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="education">
+        <h2 class="section-title">Education</h2>
+        {% for edu in json_data.education %}
+        <div class="education-entry">
+            <div class="education-header">
+                <span class="job-title" style="float: left;">{{ edu.degree }}</span>
+                <span class="job-duration" style="float: right;">{{ edu.graduation_year }}</span>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
