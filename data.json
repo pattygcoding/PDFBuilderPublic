@@ -1,0 +1,183 @@
+{
+    "tab": "John Doe Resume",
+    "title": "John Doe",
+    "contact_info": {
+        "email": "johndoe@email.com",
+        "phone": "(123) 456-7890",
+        "website": "https://johndoe.com",
+        "linkedin": "https://www.linkedin.com/in/johndoe",
+        "address": "123 Main St, Anytown, USA"
+    },
+    "skills": {
+        "languages": [
+            {"name": "Ada", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/ada"},
+            {"name": "Assembly x64", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/assembly/x64"},
+            {"name": "Assembly x86", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/assembly/x86"},
+            {"name": "Bash", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/bash"},
+            {"name": "C", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c"},
+            {"name": "C++", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c%2B%2B"},
+            {"name": "C#/.NET", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c%23"},
+            {"name": "COBOL", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/cobol"},
+            {"name": "Dart", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/dart"},
+            {"name": "Elixir", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/elixir"},
+            {"name": "Erlang", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/erlang"},
+            {"name": "F#/.NET", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/f%23"},
+            {"name": "Fortran", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/fortran"},
+            {"name": "Golang", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/golang"},
+            {"name": "Groovy", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/groovy"},
+            {"name": "Haskell", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/haskell"},
+            {"name": "HTML5/CSS3", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/html-css"},
+            {"name": "Java", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/java"},
+            {"name": "JavaScript", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/node"},
+            {"name": "Kotlin", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/kotlin"},
+            {"name": "Lua", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/lua"},
+            {"name": "Nim", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/nim"},
+            {"name": "OCaml", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/ocaml"},
+            {"name": "Perl", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/perl"},
+            {"name": "PHP", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/php"},
+            {"name": "Powershell", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/powershell"},
+            {"name": "Prolog", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/prolog"},
+            {"name": "Python", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/python"},
+            {"name": "Ruby", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/ruby"},
+            {"name": "Rust", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/rust"},
+            {"name": "Scala", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/scala"},
+            {"name": "Swift", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/swift"},
+            {"name": "TypeScript", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/typescript/node"},
+            {"name": "V", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/v"},
+            {"name": "VB.NET", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/VB.NET"},
+            {"name": "Zig", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/zig"}
+        ],
+        "frameworks_extensions": [
+            {"name": "Angular", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/typescript/angular"},
+            {"name": "Blazor", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourBlazor"},
+            {"name": "Django", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/python/django/connect_four"},
+            {"name": "Entity Framework", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourEF"},
+            {"name": "Fyne", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/golang/fyne"},
+            {"name": "JSON", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/python/json"},
+            {"name": "LINQ", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourLinq"},
+            {"name": "Minimax AI", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/python/ai"},
+            {"name": "MongoDB", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/mongodb-nosql"},
+            {"name": "MySQL", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/mysql"},
+            {"name": "Next.js", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/next"},
+            {"name": "Node.js", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/node"},
+            {"name": "Node.ts", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/typescript/node"},
+            {"name": "NoSQL", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/mongodb-nosql"},
+            {"name": "React.js", "link": "https://github.com/johndoe/Portfolio"},
+            {"name": "Ruby on Rails", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/ruby/rails"},
+            {"name": "SpringBoot", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/java/springboot"},
+            {"name": "Vue.js", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/javascript/vue"},
+            {"name": "Windows Library (C)", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c/windows"},
+            {"name": "Windows Library (C++)", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c%2B%2B/windows"},
+            {"name": "WPF (C#/.NET)", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/c%23/ConnectFourWPF"},
+            {"name": "WPF (VB.NET)", "link": "https://github.com/johndoe/Connect-Four-Language-Tree/tree/main/vbnet/ConnectFourWPF"}
+        ],
+        "other_technologies": [
+            "Cloud Platform A", "Data Tool B", "DevOps Tool C", "Collaboration Tool D", "Container Tool E", 
+            "Version Control F", "Web Hosting G", "API Query Language H", "IDE I", "OS J", 
+            "Database K", "SQL Client L", "Web Service M", "Linux Distribution N", 
+            "IDE O", "Code Editor P", "CMS Q"
+        ]
+    },
+    "experience": [
+        {
+            "job_title": "Software Developer",
+            "company": "TechCorp",
+            "duration": "June 2024 - Present",
+            "duration_workday": "06/24 - Present",
+            "location": "City, State",
+            "description": [
+                "Key responsibility 1",
+                "Key responsibility 2",
+                "Key responsibility 3",
+                "Key responsibility 4"
+            ]
+        },
+        {
+            "job_title": "Founder & Full Stack Software Engineer",
+            "company": "MyStartup",
+            "duration": "May 2020 - Present",
+            "duration_workday": "05/20 - Present",
+            "location": "Remote",
+            "description": [
+                "Led development of a major software project with a team of 5, improving performance and user experience for a large user base.",
+                "Optimized system processes, reducing execution time and enhancing product functionality.",
+                "Created automation tools that significantly reduced error rates in data processing.",
+                "Successfully deployed multiple versions of the software, keeping it up to date with the latest technologies."
+            ]
+        },
+        {
+            "job_title": "Full Stack Software Engineer",
+            "company": "EducationTech",
+            "duration": "March 2023 - December 2023",
+            "duration_workday": "03/23 - 12/23",
+            "location": "City, State",
+            "description": [
+                "Implemented high-fidelity UI designs, improving user interaction and system performance.",
+                "Established secure backend protocols, enhancing data integrity and reducing query response times.",
+                "Participated in bug identification and resolution, improving system reliability.",
+                "Collaborated with cross-functional teams to ensure timely project delivery."
+            ]
+        },
+        {
+            "job_title": "Lead Software Engineer & Web Developer",
+            "company": "University Program",
+            "duration": "August 2021 - December 2022",
+            "duration_workday": "08/21 - 12/22",
+            "location": "University, State",
+            "description": [
+                "Led the development of specialized websites, focusing on user engagement and system reliability.",
+                "Achieved high approval ratings for software quality and usability.",
+                "Managed project timelines using Agile methodologies, ensuring all milestones were met.",
+                "Implemented scalable database frameworks to support high data availability and security."
+            ]
+        }
+    ],
+    "technical_projects": [
+        {
+            "project_name": "Personal Portfolio Website",
+            "duration": "2024 - Present",
+            "description": [
+                "Developed a personal portfolio website using modern web technologies."
+            ]
+        },
+        {
+            "project_name": "Business Website",
+            "duration": "2024 - Present",
+            "description": [
+                "Built a website for a small business, focusing on user experience and scalability."
+            ]
+        },
+        {
+            "project_name": "Language Tree",
+            "duration": "2024 - Present",
+            "description": [
+                "Developed games in multiple programming languages, demonstrating proficiency in a wide range of technologies."
+            ]
+        },
+        {
+            "project_name": "Script Collection",
+            "duration": "2023 - Present",
+            "description": [
+                "Created a collection of scripts in various programming languages, showcasing versatility."
+            ]
+        },
+        {
+            "project_name": "Game Modification Program",
+            "duration": "2020 - Present",
+            "description": [
+                "Led a game modification project, improving performance and user experience for a large community."
+            ]
+        }
+    ],
+    "activities_awards": [
+        "Honor Society (Year - Year)",
+        "Hackathon Participation (Year - Year)",
+        "Achievement Award (Year)"
+    ],
+    "education": [
+        {
+            "degree": "University - Bachelor of Science in Computer Science",
+            "graduation_year": "Year"
+        }
+    ]
+}
