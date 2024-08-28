@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ json_data.tab }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            margin: 0.5in;
+        }
+
+        h1 {
+            font-size: 26pt;
+        }
+
+        h1, h2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        p, span, ul, li {
+            margin: 5px 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        /* Adjust font size for specific elements */
+        .contact-info, .job-title, .job-company, .job-location, .job-duration {
+            font-size: 14pt;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <h1>{{ json_data.title }}</h1>
+    <p class="contact-info">Address: {{ json_data.contact_info.address }}</p>
+    <p class="contact-info">Mobile Phone: {{ json_data.contact_info.phone }}</p>
+    <p class="contact-info">Email: {{ json_data.contact_info.email }}</p>
+
+    <!-- Job Experience Section -->
+    <div class="page-break"></div>
+    <h2>Work & Professional Experience</h2>
+    {% for job in json_data.experience %}
+    <p class="job-company">{{ job.company }}, <span class="job-location">{{ job.location }}</span></p>
+    <p class="job-title">{{ job.job_title }}</p>
+    <p class="job-duration">{{ job.duration_workday }}</p>
+    <ul>
+        {% for point in job.description %}
+        <li>{{ point }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+    
+
+    <!-- Education Section -->
+    <div class="page-break"></div>
+    <h2>Education</h2>
+    {% for edu in json_data.education %}
+    <p><strong>{{ edu.degree }}</strong> - {{ edu.school }} (Graduation Year: {{ edu.graduation_year }})</p>
+    {% endfor %}
+
+    <!-- Skills Section -->
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> 
+        {% for skill in json_data.skills.languages %}
+        {{ skill.name }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    <p><strong>Frameworks/Extensions:</strong> 
+        {% for framework in json_data.skills.frameworks_extensions %}
+        {{ framework.name }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+    <p><strong>Other Technologies:</strong> 
+        {% for tech in json_data.skills.other_technologies %}
+        {{ tech }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+
+    <!-- Projects Section -->
+    <div class="page-break"></div>
+    <h2>Technical Projects</h2>
+    {% for project in json_data.technical_projects %}
+    <p><strong>{{ project.project_name }}</strong> ({{ project.duration }})</p>
+    <ul>
+        {% for point in project.description %}
+        <li>{{ point }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</body>
+
+</html>
